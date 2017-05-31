@@ -79,6 +79,17 @@ const commands = [
             ]
             message.channel.send(responses[Math.floor(Math.random()*responses.length)]);
         }
+    },
+    {
+        keywords: ['Koop dan', 'koop dan'],
+        action: (message, client, mentionedBot) => {
+            const responses = [
+                'Nee ik koop niets van jou',
+                'Nee daar ga ik geen geld aan uitgeven',
+                'Jullie zeggen altijd dat ik iets moet kopen en dan spelen jullie het niet meer'
+            ]
+            message.channel.send(responses[Math.floor(Math.random()*responses.length)]);
+        }
     }
 ];
 
